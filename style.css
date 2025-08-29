@@ -227,3 +227,80 @@ section {
 /* Responsive and other elements remain unchanged */
 
 /* You can paste the remaining original CSS for responsiveness */
+/* =========================
+   📱 Mobile Responsive CSS
+   ========================= */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+  section {
+    padding: 40px 20px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero {
+    height: auto;
+    padding: 80px 20px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr; /* ek column me aa jayega */
+  }
+  .testimonial-card {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+  .contact-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .contact-btn {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 0.8rem 1rem;
+  }
+  nav ul {
+    gap: 6px;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+  section {
+    padding: 30px 15px;
+    margin: 15px auto;
+  }
+  .project-card h3,
+  .skill-card h3 {
+    font-size: 1rem;
+  }
+}
